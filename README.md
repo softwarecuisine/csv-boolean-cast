@@ -34,7 +34,7 @@ Right now the package supports next languages:
 Install CSV Boolean Cast with Composer
 
 ```bash 
-  composer require csv-boolean-cast
+  composer require softwarecuisine/csv-boolean-cast 
 ```
     
 ## Usage/Examples
