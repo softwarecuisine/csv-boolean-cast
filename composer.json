@@ -1,0 +1,40 @@
+{
+  "name": "softwarecuisine/csv-boolean-cast",
+  "description": "A tiny PHP helper casts the Excel boolean words to the boolean value",
+  "license": "MIT",
+  "type": "helper",
+  "homepage": "https://github.com/softwarecuisine/csv-boolean-cast",
+  "keywords": [
+    "csv",
+    "bool",
+    "boolean",
+    "excel"
+  ],
+  "authors": [
+    {
+      "name": "Nikolay Smeh",
+      "email": "nikolay@nikolay.ws"
+    }
+  ],
+  "require": {
+    "php": ">=7.4.0",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "php-coveralls/php-coveralls": "^2.1",
+    "mockery/mockery": "^1.2",
+    "phpunit/phpunit": "^9",
+    "friendsofphp/php-cs-fixer": "^3.0",
+    "phpstan/phpstan": "^0.12.88"
+  },
+  "autoload": {
+    "psr-4": {
+      "SoftwareCuisine\\CSVBooleanCast\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit -c phpunit.xml --testsuite Unit --coverage-html build/coverage-report",
+    "phpstan": "vendor/bin/phpstan analyse src --level 8",
+    "style-fix": "vendor/bin/php-cs-fixer fix src --verbose --allow-risky=yes --ansi"
+  }
+}
